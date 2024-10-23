@@ -1,0 +1,53 @@
+export const doctors = [
+    { id_doctor: 1, name: "Dr. John Doe", specialty: "Cardiology", icon: "M" },
+    { id_doctor: 2, name: "Dr. Jane Smith", specialty: "Dermatology", icon: "F" },
+    { id_doctor: 3, name: "Dr. Michael Brown", specialty: "Pediatrics", icon: "M" },
+    { id_doctor: 4, name: "Dr. Emily Johnson", specialty: "Oncology", icon: "F" },
+    { id_doctor: 5, name: "Dr. William Lee", specialty: "Neurology", icon: "M" },
+    { id_doctor: 6, name: "Dr. Sarah Wilson", specialty: "Psychiatry", icon: "F" },
+    { id_doctor: 7, name: "Dr. Christopher Davis", specialty: "Orthopedics", icon: "M" },
+    { id_doctor: 8, name: "Dr. Amanda Martinez", specialty: "Gynecology", icon: "F" },
+    { id_doctor: 9, name: "Dr. James Thompson", specialty: "Urology", icon: "M" },
+    { id_doctor: 10, name: "Dr. Samantha White", specialty: "Endocrinology", icon: "F" },
+    { id_doctor: 11, name: "Dr. Robert Harris", specialty: "Rheumatology", icon: "M" },
+    { id_doctor: 12, name: "Dr. Laura Garcia", specialty: "Ophthalmology", icon: "F" },
+    { id_doctor: 13, name: "Dr. Daniel Clark", specialty: "Dentistry", icon: "M" },
+    { id_doctor: 14, name: "Dr. Olivia Rodriguez", specialty: "Allergy & Immunology", icon: "F" },
+    { id_doctor: 15, name: "Dr. Kevin Nguyen", specialty: "Gastroenterology", icon: "M" },
+    { id_doctor: 16, name: "Dr. Maria Lopez", specialty: "Pulmonology", icon: "F" },
+    { id_doctor: 17, name: "Dr. Eric Scott", specialty: "Hematology", icon: "M" },
+    { id_doctor: 18, name: "Dr. Jessica Adams", specialty: "Otolaryngology", icon: "F" },
+    { id_doctor: 19, name: "Dr. Brian Hall", specialty: "Nephrology", icon: "M" },
+    { id_doctor: 20, name: "Dr. Michelle Carter", specialty: "Infectious Diseases", icon: "F" },
+];
+
+
+export const appointments = [
+    { id_appointment: 1, user: "Ana Silva", service: "Consultation", doctor: "Dr. John Doe", specialty: "Cardiology", booking_date: "2023-11-01", booking_hour: "09:00", price: 100.00 },
+    { id_appointment: 2, user: "Pedro Santos", service: "Follow-up", doctor: "Dr. Jane Smith", specialty: "Dermatology", booking_date: "2023-11-02", booking_hour: "10:30", price: 150.00 },
+    { id_appointment: 3, user: "Jo o Paulo", service: "Check-up", doctor: "Dr. Michael Brown", specialty: "Pediatrics", booking_date: "2023-11-03", booking_hour: "11:00", price: 200.00 },
+    { id_appointment: 4, user: "Luiza Costa", service: "Therapy", doctor: "Dr. Emily Johnson", specialty: "Oncology", booking_date: "2023-11-04", booking_hour: "14:00", price: 300.00 },
+    { id_appointment: 5, user: "Rafael Oliveira", service: "Consultation", doctor: "Dr. William Lee", specialty: "Neurology", booking_date: "2023-11-05", booking_hour: "15:30", price: 100.00 },
+    { id_appointment: 6, user: "Sofia Gomes", service: "Follow-up", doctor: "Dr. Sarah Wilson", specialty: "Psychiatry", booking_date: "2023-11-06", booking_hour: "16:00", price: 150.00 },
+    { id_appointment: 7, user: "Matheus Souza", service: "Surgery", doctor: "Dr. Christopher Davis", specialty: "Orthopedics", booking_date: "2023-11-07", booking_hour: "08:00", price: 2000.00 },
+    { id_appointment: 8, user: "Gabriela Fernandes", service: "Consultation", doctor: "Dr. Amanda Martinez", specialty: "Gynecology", booking_date: "2023-11-08", booking_hour: "09:30", price: 100.00 },
+    { id_appointment: 9, user: "Felipe Almeida", service: "Check-up", doctor: "Dr. James Thompson", specialty: "Urology", booking_date: "2023-11-09", booking_hour: "11:30", price: 200.00 },
+    { id_appointment: 10, user: "Leticia Silva", service: "Therapy", doctor: "Dr. Samantha White", specialty: "Endocrinology", booking_date: "2023-11-10", booking_hour: "13:00", price: 300.00 },
+    { id_appointment: 11, user: "Guilherme Pereira", service: "Consultation", doctor: "Dr. Robert Harris", specialty: "Rheumatology", booking_date: "2023-11-11", booking_hour: "14:30", price: 100.00 },
+    { id_appointment: 12, user: "Camila Martins", service: "Follow-up", doctor: "Dr. Laura Garcia", specialty: "Ophthalmology", booking_date: "2023-11-12", booking_hour: "15:00", price: 150.00 },
+    { id_appointment: 13, user: "Julia Lima", service: "Check-up", doctor: "Dr. Daniel Clark", specialty: "Dentistry", booking_date: "2023-11-13", booking_hour: "16:30", price: 200.00 },
+    { id_appointment: 14, user: "Vinicius Mendes", service: "Therapy", doctor: "Dr. Olivia Rodriguez", specialty: "Allergy & Immunology", booking_date: "2023-11-14", booking_hour: "09:00", price: 300.00 },
+    { id_appointment: 15, user: "Bruno Sousa", service: "Consultation", doctor: "Dr. Kevin Nguyen", specialty: "Gastroenterology", booking_date: "2023-11-15", booking_hour: "10:00", price: 100.00 },
+    { id_appointment: 16, user: "Luisa Teixeira", service: "Follow-up", doctor: "Dr. Maria Lopez", specialty: "Pulmonology", booking_date: "2023-11-16", booking_hour: "11:30", price: 150.00 },
+    { id_appointment: 17, user: "Ricardo Santos", service: "Check-up", doctor: "Dr. Eric Scott", specialty: "Hematology", booking_date: "2023-11-17", booking_hour: "13:00", price: 200.00 },
+    { id_appointment: 18, user: "Mariana Oliveira", service: "Therapy", doctor: "Dr. Jessica Adams", specialty: "Otolaryngology", booking_date: "2023-11-18", booking_hour: "14:00", price: 300.00 },
+    { id_appointment: 19, user: "Thiago Almeida", service: "Consultation", doctor: "Dr. Brian Hall", specialty: "Nephrology", booking_date: "2023-11-19", booking_hour: "15:30", price: 100.00 },
+    { id_appointment: 20, user: "Beatriz Gomes", service: "Follow-up", doctor: "Dr. Michelle Carter", specialty: "Infectious Diseases", booking_date: "2023-11-20", booking_hour: "16:00", price: 150.00 },
+];
+
+export const services = [
+    { id_service: 1, description: "Consulta médica", price: 100.00 },
+    { id_service: 2, description: "Drenagem linfática", price: 150.00 },
+    { id_service: 3, description: "Lipoaspiração", price: 2000.00 },
+    { id_service: 4, description: "Mamoplastia", price: 5000.00 },
+];
