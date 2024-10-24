@@ -1,7 +1,17 @@
 import './navbar.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import logo from '../../assets/logo-white.png'
+import api from '../../constants/api'
 function NavBar() {
+    const navigate = useNavigate();
+    function Logout() {
+        localStorage.removeItem("user")
+        localStorage.removeItem("admin")
+        api.defaults.headers.common["Authorization"] = ""
+        navigate("/")
+    }
+
+
     return <nav className="navbar fixed-top navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div className="container-fluid">
             <Link className="navbar-brand" to="/appointments">
@@ -19,17 +29,16 @@ function NavBar() {
                         <Link className="nav-link active" to="/doctors">Médicos</Link>
                     </li>
                 </ul>
-
                 <ul className="navbar-nav ">
                     <li className='nav-item'>
                         <div className="btn-group">
                             <button className="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Lucas de almeida
+                                {localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")).name : localStorage.getItem("admin") ? JSON.parse(localStorage.getItem("admin")).name : "Login"}
                             </button>
                             <ul className="dropdown-menu dropdown-menu-end">
                                 <li><Link className="dropdown-item" href="#">Meu Perfil</Link></li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li><Link className="dropdown-item" to="/">Desconectar</Link></li>
+                                <li><hr className="dropdown-divider" /></li>
+                                <li><button className="dropdown-item" onClick={Logout}>Desconectar</button></li>
                             </ul>
                         </div>
 
